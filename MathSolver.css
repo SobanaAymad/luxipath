@@ -1,0 +1,202 @@
+/* Math Solver Container */
+.math-solver {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .math-solver h2 {
+    color: #3a0ca3;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  /* Input Group */
+  .math-input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .math-input-group input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .math-input-group input:focus {
+    outline: none;
+    border-color: #4361ee;
+  }
+  
+  .math-input-group button {
+    background: #4361ee;
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .math-input-group button:hover {
+    background: #3a0ca3;
+    transform: translateY(-2px);
+  }
+  
+  /* Examples Section */
+  .examples {
+    margin-bottom: 1.5rem;
+  }
+  
+  .examples p {
+    color: #495057;
+    margin-bottom: 0.5rem;
+  }
+  
+  .example-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .example-buttons button {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #3a0ca3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .example-buttons button:hover {
+    background: #e9ecef;
+  }
+  
+  /* Solution Section */
+  .solution {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .solution h3 {
+    color: #495057;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .result {
+    color: #3a0ca3;
+    font-weight: bold;
+  }
+  
+  .steps-toggle {
+    background: none;
+    border: none;
+    color: #4361ee;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  .steps-toggle:hover {
+    text-decoration: underline;
+  }
+  
+  .steps {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .steps h4 {
+    color: #495057;
+    margin-bottom: 0.5rem;
+  }
+  
+  .steps ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .steps li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .step-expression {
+    font-family: monospace;
+    background: #e9ecef;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .step-arrow {
+    color: #6c757d;
+  }
+  
+  .step-result {
+    font-weight: bold;
+    color: #3a0ca3;
+  }
+  
+  /* History Section */
+  .history {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .history h4 {
+    color: #495057;
+    margin-bottom: 0.5rem;
+  }
+  
+  .history ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .history li {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  
+  .history li:hover {
+    background: #f8f9fa;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .math-solver {
+      padding: 1.5rem;
+    }
+    
+    .math-input-group {
+      flex-direction: column;
+    }
+    
+    .example-buttons {
+      justify-content: center;
+    }
+  }
